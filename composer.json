@@ -1,0 +1,25 @@
+{
+    "name": "mockapi/mockapi",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-0": {
+            "Mockapi\\Mockapi\\": "src/",
+            "Mockapi\\": "vendor/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mockapi/resourceservice.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/mockapi/resourceprovider.git"
+        }
+    ],
+    "require": {
+        "mockapi/resourceprovider": "dev-master",
+        "mockapi/resourceservice": "dev-master"
+    }
+}
